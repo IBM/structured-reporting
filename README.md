@@ -1,0 +1,2 @@
+# structured-reporting-for-anatomical-pathology
+Structured Reporting for Anatomical Pathology (SRAP) is a web-based tool for use by pathology labs to capture pathology reports in a standardized way. SRAP is a generic web application that takes JSON Schema and generates a multilingual UI form for data capturing, stores that data locally, sync's the data to other databases, and can work completely offline.
