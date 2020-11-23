@@ -30,7 +30,7 @@ export const messages = defineMessages({
   disclaimer: {
     id: 'loginPage.disclaimer',
     defaultMessage:
-      'Reminder: This is a prototype. Do not include personally identifiable information or protected health information (PHI)',
+      ' ',
   },
   comingSoon: {
     id: 'reportListPage.comingSoon',

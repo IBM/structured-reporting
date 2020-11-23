@@ -22,9 +22,9 @@ const LoginPage = ({ intl, config, history }) => {
   const [passwordValid, setPasswordValid] = useState(true);
   const [showDisclaimer, setShowDisclaimer] = useState(false);
 
-  function disclaimer() {
-    setShowDisclaimer(true);
-  }
+  // function disclaimer() {
+  //   setShowDisclaimer(true);
+  // }
 
   function onCloseDisclaimer() {
     setShowDisclaimer(false);
@@ -98,7 +98,7 @@ const LoginPage = ({ intl, config, history }) => {
             className="bx--fieldset app-login--button"
             size="field"
             type="submit"
-            onClick={() => disclaimer()}
+            onClick={() => doLogin()}
           >
             {intl.formatMessage(messages.loginButton)}
           </Button>
