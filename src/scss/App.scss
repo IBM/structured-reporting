@@ -1,0 +1,64 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import 'header';
+@import 'forms';
+@import 'login';
+@import 'ReportView';
+@import 'Playground';
+
+.bx--content.app-viewform--flexdirection,
+.bx--content.app-form--scroll,
+.bx--content.app-reportList {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  z-index: 700;
+  padding: 0;
+  height: 95%;
+}
+
+body.bx--body--with-modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.bx--data-table {
+  cursor: pointer;
+}
+
+div.app-button-toolbar {
+  text-align: right;
+  width: 100%;
+  height: 9%;
+  button {
+    margin: 4px 0px 4px 4px;
+  }
+}
+
+.app-hidden {
+  // TODO !important is not recommended, add more specificity instead
+  display: none !important;
+}
+
+@media print {
+  .app-no-print,
+  .app-no-print * {
+    // TODO !important is not recommended, add more specificity instead
+    display: none !important;
+  }
+}
+
+@media print {
+  .app-no-position,
+  .app-no-position {
+    // TODO !important is not recommended, add more specificity instead
+    position: static !important;
+  }
+}

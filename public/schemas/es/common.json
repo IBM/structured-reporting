@@ -1,0 +1,51 @@
+{
+  "demographics": {
+    "title": "Información del Paciente",
+    "type": "object",
+    "required": [
+      "last_name",
+      "first_name",
+      "date_of_birth",
+      "patient_identifier",
+      "date_of_request",
+      "laboratory_number"
+    ],
+    "properties": {
+      "last_name": {
+        "type": "string",
+        "title": "Apellidos"
+      },
+      "first_name": {
+        "type": "string",
+        "title": "Nombre"
+      },
+      "date_of_birth": {
+        "type": "string",
+        "format": "date",
+        "title": "Fecha de Nacimiento"
+      },
+      "patient_identifier": {
+        "type": "string",
+        "title": "Identificador del Paciente"
+      },
+      "date_of_request": {
+        "type": "string",
+        "format": "date",
+        "title": "Fecha de Procedimiento"
+      },
+      "date_specimen_received": {
+        "type": "string",
+        "format": "date",
+        "title": "Fecha de Espécimen recibido"
+      },
+      "laboratory_number": {
+        "type": "string",
+        "title": "Identificador del Informe"
+      }
+    }
+  },
+  "additional_notes": {
+    "title": "Notas adicionales",
+    "type": "string"
+  }
+}

@@ -1,0 +1,193 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+// TODO There are some !important statements, which are not recommended, add more specificity instead
+.app-schema-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .app-form-title {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.16px;
+    margin: 0 0 0 1rem;
+    width: 100%;
+    text-align: left;
+    z-index: 0;
+  }
+  .bx--toast-notification {
+    align-self: center;
+  }
+  .rjsf {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 330px;
+    height: 100%;
+
+    .app-form--accordion {
+      height: 100%;
+      overflow-x: auto;
+    }
+
+    .errors {
+      display: none !important;
+    }
+
+    .form-group {
+      margin: 0px;
+      height: 91%;
+
+      .field {
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+      h3 {
+        font-weight: bold;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+
+      .bx--accordion__item {
+        border-top: none;
+      }
+
+      .bx--accordion__content {
+        padding-right: 1rem;
+      }
+    }
+    .bx--accordion {
+      height: 100%;
+    }
+
+    .app-form-buttons {
+      align-self: flex-end;
+    }
+
+    ul {
+      .app-form--shadow {
+        box-shadow: 0px 0px 0px;
+        padding: 10px;
+        height: auto;
+        margin: 16px 10% !important;
+      }
+    }
+
+    .app_intraglandular_extent {
+      .bx--form-item {
+        .bx--dropdown__wrapper.bx--list-box__wrapper {
+          width: 10rem;
+        }
+      }
+    }
+
+    .bx--form-item {
+      margin-bottom: 8px;
+      .app-textinput {
+        display: flex;
+        .app-textinput-addon {
+          align-self: center;
+          margin: 0px 6px;
+        }
+      }
+
+      .bx--text-input__field-wrapper,
+      .bx--date-picker .bx--date-picker-container {
+        width: 15rem;
+      }
+      .bx--dropdown__wrapper.bx--list-box__wrapper {
+        width: 24rem;
+      }
+
+      .bx--label {
+        margin-bottom: 0px;
+      }
+    }
+
+    div.form-group div.bx--grid {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    @media (min-width: 500px) {
+      .form-group {
+        height: 91%;
+
+        .bx--accordion {
+          height: 100%;
+        }
+      }
+
+      ul {
+        legend {
+          margin-bottom: 16px;
+          margin-top: 16px;
+        }
+
+        .app-form--shadow {
+          box-shadow: 1px 1px 10px;
+          padding: 2.25rem;
+          height: auto;
+          margin: 16px 10% !important;
+        }
+      }
+    }
+
+    @media (min-width: 800px) {
+      .form-group {
+        height: 91%;
+      }
+      .bx--accordion {
+        height: 100%;
+      }
+
+      div.form-group div.bx--grid {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .bx--content {
+    padding: 2px;
+  }
+  .app_object_demographics {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .bx--text-area__wrapper {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .bx--content {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 800px) {
+  .bx--content {
+    padding: 16px;
+  }
+  .app_object_demographics {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .bx--text-area__wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}

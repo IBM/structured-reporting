@@ -1,0 +1,29 @@
+{
+  "uiSchema": {
+    "ui:order": ["demographics", "*", "additional_notes"],
+    "isAccordionParent": "false",
+    "demographics": {
+      "classNames": "app_schema_demographics",
+      "gridColumns": "3"
+    },
+    "additional_notes": {
+      "ui:widget": "textarea"
+    },
+    "history": {
+      "isAccordionItem": true,
+      "previous_history_content": {
+        "ui:widget": "textarea",
+        "ui:cols": 50,
+        "ui:rows": 5
+      }
+    },
+    "travel_history_section": {
+      "isAccordionItem": true
+    }
+  },
+  "formData": {
+    "demographics": {},
+    "history": {},
+    "travel_section": []
+  }
+}
