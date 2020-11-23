@@ -33,11 +33,11 @@ export const messages = defineMessages({
   },
   patientId: {
     id: 'reportList.patientId',
-    defaultMessage: 'Patient ID',
+    defaultMessage: 'Peron ID',
   },
   patientName: {
     id: 'reportList.patientName',
-    defaultMessage: 'Patient Name',
+    defaultMessage: 'Person Name',
   },
   cancerType: {
     id: 'reportList.cancerType',
@@ -69,7 +69,7 @@ export const messages = defineMessages({
   },
   searchMessage: {
     id: 'reportList.searchMessage',
-    defaultMessage: 'Search Patient ID, Patient Name, or Report ID',
+    defaultMessage: 'Search Person ID, Person Name, or Report ID',
   },
   searchReports: {
     id: 'reportList.searchReports',

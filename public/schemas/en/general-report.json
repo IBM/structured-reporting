@@ -1,6 +1,6 @@
 {
   "schema": {
-    "title": "General Pathology Report",
+    "title": "General Report",
     "type": "object",
     "properties": {
       "history": {
@@ -19,14 +19,18 @@
               {
                 "properties": {
                   "previous_history": {
-                    "enum": [false]
+                    "enum": [
+                      false
+                    ]
                   }
                 }
               },
               {
                 "properties": {
                   "previous_history": {
-                    "enum": [true]
+                    "enum": [
+                      true
+                    ]
                   },
                   "previous_history_content": {
                     "type": "string",

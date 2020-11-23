@@ -1,6 +1,6 @@
 {
   "demographics": {
-    "title": "Información del Paciente",
+    "title": "Información del Persona",
     "type": "object",
     "required": [
       "last_name",
@@ -26,7 +26,7 @@
       },
       "patient_identifier": {
         "type": "string",
-        "title": "Identificador del Paciente"
+        "title": "Identificador del Persona"
       },
       "date_of_request": {
         "type": "string",

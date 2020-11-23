@@ -46,7 +46,7 @@ export const messages = defineMessages({
   },
   btnNewPatientReport: {
     id: 'reportViewPage.btnNewPatientReport',
-    defaultMessage: 'New Patient Report',
+    defaultMessage: 'New Report',
   },
   btnApprove: {
     id: 'reportViewPage.btnApprove',
