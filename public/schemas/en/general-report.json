@@ -1,0 +1,108 @@
+{
+  "schema": {
+    "title": "General Report",
+    "type": "object",
+    "properties": {
+      "history": {
+        "title": "History",
+        "type": "object",
+        "properties": {
+          "previous_history": {
+            "type": "boolean",
+            "title": "Is there any previous history?",
+            "default": false
+          }
+        },
+        "dependencies": {
+          "previous_history": {
+            "oneOf": [
+              {
+                "properties": {
+                  "previous_history": {
+                    "enum": [
+                      false
+                    ]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "previous_history": {
+                    "enum": [
+                      true
+                    ]
+                  },
+                  "previous_history_content": {
+                    "type": "string",
+                    "title": "Previous History:"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "travel_history_section": {
+        "title": "Travel history",
+        "type": "object",
+        "properties": {
+          "travel_history": {
+            "title": "",
+            "type": "array",
+            "items": {
+              "title": "Travel details",
+              "type": "object",
+              "properties": {
+                "travel_country_cities": {
+                  "title": "Country and city/cities visited",
+                  "type": "string"
+                },
+                "travel_departure": {
+                  "title": "Date of departure (travel to area)",
+                  "type": "string",
+                  "format": "date"
+                },
+                "travel_return": {
+                  "title": "Date of return (travel from area)",
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "uiSchema": {
+    "isAccordionParent": "true",
+    "demographics": {
+      "isAccordionItem": "true",
+      "classNames": "app_schema_demographics",
+      "gridColumns": "3"
+    },
+    "history": {
+      "isAccordionItem": true,
+      "previous_history_content": {
+        "ui:widget": "textarea",
+        "ui:cols": 50,
+        "ui:rows": 5
+      }
+    }
+  },
+  "formData": {
+    "demographics": {
+      "last_name": "",
+      "first_name": "",
+      "date_of_birth": "",
+      "laboratory_number": "",
+      "date_of_request": "",
+      "patient_identifier": ""
+    },
+    "history": {
+      "previous_history": false,
+      "previous_history_content": "",
+      "primary_pattern_grade": "1"
+    }
+  }
+}

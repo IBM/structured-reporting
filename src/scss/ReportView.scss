@@ -1,0 +1,115 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import 'palette';
+
+.app-formview--grid {
+  padding-top: 10px;
+  .rjsf {
+    margin: 12px;
+    button[type='submit'] {
+      display: none;
+    }
+    .bx--col.app-section-col {
+      border-top: solid 1px $black;
+      border-left: solid 1px $black;
+      border-right: solid 1px $black;
+      padding: 8px;
+      &.app-section-first-column {
+        border-right: 0px;
+      }
+      &.app-section-first-last-row {
+        border-bottom: solid 1px $black;
+      }
+    }
+    .app-section-demographics {
+      margin-bottom: 24px;
+    }
+
+    .bx--col {
+      padding: 0px;
+    }
+  }
+
+  .app-fieldView {
+    margin: 12px;
+
+    .app-fieldView-label {
+      margin-right: 8px;
+    }
+
+    .app-fieldView-value {
+      font-weight: 100;
+    }
+  }
+
+  .app-section-view {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    h5 {
+      margin-left: 12px;
+    }
+  }
+
+  .app_schema_demographics {
+    background-color: $gray-secundary;
+    height: 100%;
+  }
+
+  .btn-add {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.app_schema_title {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+div.app-button-toolbar {
+  text-align: right;
+  width: 100%;
+
+  button {
+    margin: 4px 4px 4px 4px;
+  }
+}
+div.app-button-toolbar-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: right;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  button {
+    margin: 8px 8px 16px 8px;
+  }
+}
+
+.app-reportList--size {
+  width: 100%;
+}
+
+.app-viewform--flexdirection {
+  flex-direction: column;
+  // TODO !important is not recommended, add more specificity instead
+  height: 91% !important;
+  overflow-x: auto;
+}
+
+.bx--data-table-container {
+  height: 100vh;
+}
+
+.app-formview-titles {
+  padding-left: 32px;
+  padding-right: 32px;
+}

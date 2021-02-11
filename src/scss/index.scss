@@ -1,0 +1,24 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
+@import '@carbon/grid/scss/grid';
+
+$feature-flags: (
+  ui-shell: true,
+);
+
+html,
+main {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

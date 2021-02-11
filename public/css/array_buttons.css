@@ -1,0 +1,29 @@
+.btn {
+  width: 2em;
+  height: 2em;
+  border: none;
+  font-size: large;
+  margin-right: 6px;
+  margin-top: 6px;
+  background-color: #f4f4f4;
+}
+
+.btn-group {
+  width: 10em;
+}
+
+.btn-add:after {
+  content: '+';
+}
+
+.array-item-move-up:after {
+  content: '^';
+}
+
+.array-item-move-down:after {
+  content: 'v';
+}
+
+.array-item-remove:after {
+  content: 'X';
+}

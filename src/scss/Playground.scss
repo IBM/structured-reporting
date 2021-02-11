@@ -1,0 +1,30 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+.bx--content.app-playground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .app-schema-form {
+    overflow: auto;
+  }
+  .app-playground-textarea {
+    align-self: center;
+  }
+  button,
+  h4 {
+    margin-top: 24px;
+    align-self: center;
+  }
+  button.button-clear {
+    align-self: flex-start;
+  }
+  .bx--form-item.app-playground-textarea {
+    flex: none;
+  }
+}

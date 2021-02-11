@@ -1,0 +1,47 @@
+/**
+ * Copyright 2020 IBM Corp. All Rights Reserved.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import 'palette';
+
+.app-login {
+  .app-login-container {
+    background-color: $gray-secundary;
+    border-bottom: none;
+    height: 100vh;
+  }
+
+  .app-login--link {
+    text-align: right;
+  }
+
+  .app-login--form {
+    background-color: $white;
+    padding: 10%;
+  }
+
+  .app-login--input {
+    margin-bottom: 2rem;
+    background-color: $gray-secundary;
+  }
+
+  @media (min-width: 800px) {
+    .app-login-container {
+      padding: 10% 30%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .app-login-container {
+      padding: 30% 20% 10%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .app-login-container {
+      padding: 25% 5%;
+    }
+  }
+}
